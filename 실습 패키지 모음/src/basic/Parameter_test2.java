@@ -14,7 +14,7 @@ public class Parameter_test2 {
 
         System.out.println(Math.random());    // Math는 자바도 자바스크립트도 둘 다 static (클래스 메소드)
 
-        Data2 d = new Data2();     // Data 객체를 가리키는 변수 d(참조형 변수) like 데이터 타입
+        Data2 d = new Data2();     // Data2 객체를 가리키는 변수 d(참조형 변수) like 데이터 타입
         d.x = 10;
         change(d);                // 해봤자 안바뀜
         System.out.println("인스턴스변수 d.x ==>" + d.x);    // before = 10, after = 10

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 14번</title>
+    <h1> 14번 문제 </h1>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p>
+                다음 중 접근권한제어자 설명을 잘못 설명한 것을 고르십시오.
+            </p>
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> public - 모두 접근이 가능하며, 제한이 없다. </label> <br>
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> protected - 동일패키지에 속하는 클래스와 상위클래스 관계에서 접근이 가능하다. </label> <br>
+                <input type="radio" name="question1" value="v3" id="r3">
+                    <label for="r3"> Private - 동일한 클래스에서만 접근이 가능하다. </label> <br>
+                <input type="radio" name="question1" value="v4" id="r4">
+                    <label for="r4"> default - 가장 기본적인 제어자이며, 별도의 제어자가 없으면 적용된다. </label> <br>
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test15.html"
+                if(form.question1[1].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. protected는 상위클래스가 아닌 하위클래스에서 접근이 가능하다.");
+        }
+    </script>
+</body>
+</html>

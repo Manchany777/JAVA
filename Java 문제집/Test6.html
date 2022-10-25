@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 6번</title>
+    <h1> 6번 문제 </h1>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p> 
+               다음 대화를 보고 빈칸에 순서대로 정리한 답을 고르시오.
+            </p>
+            <br>
+            <fieldset>
+                <p>
+                    <p>
+                        철수 "오늘 배우는 내용은 자바의 데이터 참조형 타입인가?"
+                    </p> 
+                    <p>
+                        인수 "맞아. 참조형 타입으로는 3가지가 존재하지."
+                    </p>
+                    <p>
+                        철수 "3가지? 기본형과는 조금 적네?"
+                    </p> 
+                    <p>
+                        인수 "기본형과는 다른 점이 있지, 기본형은 실제 데이터 값을 저장하고, 참조형과는 다르지."
+                    </p>
+                    <p>
+                        철수 "참조형에는 어떤 것이 있는거야?"
+                    </p> 
+                    <p>
+                        인수 "가장 먼저 알아야 할 거는 A라는 것이야."
+                    </p>
+                    <p>
+                        철수 "A? 얘는 뭐하는 앤데?"
+                    </p> 
+                    <p>
+                        인수 "A는 동일한 자료형을 연속된 공간에 저장하기 위한 자료구조야."
+                    </p>
+                    <p>
+                        철수 "아 얘의 역할은 연관된 변수를 그룹으로 묶어주는 거구나."
+                    </p> 
+                    <p>
+                        인수 "B는 객체 전반적인 것을 정의하는 틀, 설계도로 생각해도 되."
+                    </p>
+                    <p>
+                        철수 "그럼 C는?"
+                    </p> 
+                    <p>
+                        인수 "C는 동일한 목적하에 동일한 기능을 수행하게끔 강제하는 것으로 사용되."
+                    </p>
+                    <p>
+                        철수 "아! 이제 이해가 되네."
+                    </p> 
+                </p>
+            </fieldset>
+            <h3>
+                A,B,C 설명이 맞는 것을 고르시면 됩니다.
+            </h3>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> A: enumeration B: String C : Array </label> <br>
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> A: Class B: Array C: enumeration </label> <br>
+                <input type="radio" name="question1" value="v3" id="r3">
+                    <label for="r3"> A: Array B: interface C: enumeration </label> <br>
+                <input type="radio" name="question1" value="v4" id="r4">
+                    <label for="r4"> A: Array B: Class C: interface </label> <br>
+                <input type="radio" name="question1" value="v5" id="r5">
+                    <label for="r5"> A: Class B: Array C: interface </label> <br>
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test7.html"
+                if(form.question1[3].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. Array, Class, interface 순서대로입니다.");
+        }
+    </script>
+</body>
+</html>

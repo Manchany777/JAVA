@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 8번</title>
+    <h1> 8번 문제 </h1>
+    <style>
+        img{
+            display: block; margin: 0 auto;
+            width: 300px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p> 
+                다음 사진을 보고 어떤 명령문 인지 고르시오.
+            </p>
+            <img src="test8.png">
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> while </label> &nbsp;
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> if </label> &nbsp;
+                <input type="radio" name="question1" value="v3" id="r3">
+                    <label for="r3"> switch </label> &nbsp;
+                <input type="radio" name="question1" value="v4" id="r4">
+                    <label for="r4"> for </label> &nbsp;
+                <input type="radio" name="question1" value="v5" id="r5">
+                    <label for="r5"> Array </label> &nbsp;
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test9.html"
+                if(form.question1[3].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. 위 그림은 for문이다.");
+        }
+    </script>
+</body>
+</html>

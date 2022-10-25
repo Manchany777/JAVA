@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 7번</title>
+    <h1> 7번 문제 </h1>
+    <style>
+        img{
+            display: block; margin: 0 auto;
+            width: 800px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p> 
+                다음 사진을 보고 빈칸에 알맞게 적어놓지 않은 것을 고르시오.
+            </p>
+            <img src="test7.png">
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                <label for="r1"> A : 증감 </label> &nbsp;
+            <input type="radio" name="question1" value="v2" id="r2">
+                <label for="r2"> B : 산술 </label> &nbsp;
+            <input type="radio" name="question1" value="v3" id="r3">
+                <label for="r3"> C : 시프트 </label> &nbsp;
+            <input type="radio" name="question1" value="v4" id="r4">
+                <label for="r4"> D : 비교 </label> <br>
+            <input type="radio" name="question1" value="v5" id="r5">
+                <label for="r5"> E : 부호 </label> &nbsp;
+            <input type="radio" name="question1" value="v6" id="r6">
+                <label for="r6"> F : 논리 </label> &nbsp;
+            <input type="radio" name="question1" value="v7" id="r7">
+                <label for="r7"> G : 조건 </label> &nbsp;
+            <input type="radio" name="question1" value="v8" id="r8">
+                <label for="r8"> H : 대입 </label> <br>
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test8.html"
+                if(form.question1[4].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. E는 부호가 아닌 비트이다.");
+        }
+    </script>
+</body>
+</html>

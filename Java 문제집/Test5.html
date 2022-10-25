@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 5번</title>
+    <h1> 5번 문제 </h1>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p> 
+                자바의 데이터 타입 중 기본 8개에서 설명하는 문구를 보고 알맞는 것을 고르십시오.
+            </p>
+            <br>
+            <fieldset>
+                <p>
+                    ? 는 문자를 저장하는 데 사용되며, 변수 하나의 문자만 저장할 수 있고, 크기가 16bit를 가지고 있다.
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> boolean </label> &nbsp;
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> char </label> &nbsp;
+                <input type="radio" name="question1" value="v3" id="r3">
+                    <label for="r3"> byte </label> &nbsp;
+                <input type="radio" name="question1" value="v4" id="r4">
+                    <label for="r4"> short </label> <br>
+                <input type="radio" name="question1" value="v5" id="r5">
+                    <label for="r5"> int </label> &nbsp;
+                <input type="radio" name="question1" value="v6" id="r6">
+                    <label for="r6"> long </label> &nbsp;
+                <input type="radio" name="question1" value="v7" id="r7">
+                    <label for="r7"> float </label> &nbsp;
+                <input type="radio" name="question1" value="v8" id="r8">
+                    <label for="r8"> double </label> <br>
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test6.html"
+                if(form.question1[1].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. char는 데이터 타입 8개 중 유일하게 문자를 저장합니다.");
+        }
+    </script>
+</body>
+</html>

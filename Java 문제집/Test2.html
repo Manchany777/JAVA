@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 2번</title>
+    <h1> 2번 문제 </h1>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p> 
+                자바에서 package는 관련된 여러 class를 묶어 관리한다.
+            </p>
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> O </label> &nbsp;
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> X </label> &nbsp;
+
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test3.html"
+                if(form.question1[0].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. 자바에서 package는 폴더 개념으로 여러 class를 묶어 관리합니다.");
+        }
+    </script>
+</body>
+</html>

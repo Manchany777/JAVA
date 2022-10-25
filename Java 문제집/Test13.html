@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 13번</title>
+    <h1> 13번 문제 </h1>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1> 다음문제를 보고 정답을 맞추시오 </h1> </legend>
+        <form name="form">
+            <p>
+                 다음 중 생성자의 대한 설명으로 아닌 것을 고르십시오.
+            </p>
+            <br>
+            <fieldset>
+                <input type="radio" name="question1" value="v1" id="r1">
+                    <label for="r1"> 생성자는 객체를 생성할 때 사용되는 메소드이다. </label> <br>
+                <input type="radio" name="question1" value="v2" id="r2">
+                    <label for="r2"> 생성자는 인스턴스를 생성할 때 반드시 호출된다. </label> <br>
+                <input type="radio" name="question1" value="v3" id="r3">
+                    <label for="r3"> 생성자를 선언할 때 클래스의 이름과 동일하게 적어줘야 한다. </label> <br>
+                <input type="radio" name="question1" value="v4" id="r4">
+                    <label for="r4"> 생성자는 접근제어자 없이 생성이 된다. </label> <br>
+                <input type="radio" name="question1" value="v5" id="r5">
+                    <label for="r5"> 생성자는 여러개 작성할 수 있다. </label> <br>
+        </form>
+        <button type="button" onClick="question();"> 다음으로 </button>
+    </fieldset>
+    <script type="text/javaScript">
+        function question(){
+            location.href="Test14.html"
+                if(form.question1[3].checked==true) 
+                    alert("정답입니다.");
+                else 
+                    alert("오답입니다. 생성자는 접근 제어자(public 같은) 없이는 생성할 수 없다.");
+        }
+    </script>
+</body>
+</html>
